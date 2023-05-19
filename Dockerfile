@@ -2,7 +2,7 @@
 FROM docker.io/library/node:16.10-alpine
 
 ARG TESTWORKFLOW
-ARG DEMOWORKFLOW
+ARG POLO
 
 RUN echo "Build argument value of TESTWORKFLOW : ${TESTWORKFLOW}"
 RUN echo "Build argument value of DEMOWORKFLOW : ${DEMOWORKFLOW}"
@@ -30,6 +30,6 @@ RUN npm prune --production
 
 # Expose the port the app will run on
 EXPOSE 4001
-
+EXPOSE 9000
 # Start the application
 CMD ["npm", "start"]
