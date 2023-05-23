@@ -2,7 +2,7 @@
 FROM docker.io/library/node:16.10-alpine
 
 ARG TESTWORKFLOW
-ARG POLO
+ARG DEMOWORKFLOW
 
 RUN echo "Build argument value of TESTWORKFLOW : ${TESTWORKFLOW}"
 RUN echo "Build argument value of DEMOWORKFLOW : ${DEMOWORKFLOW}"
